@@ -359,7 +359,7 @@
                         <div class="skill-right">
                             <h3>Tools and Technology</h3>
                             <div class="professional">
-                                
+
 
                                 <div class="box">
                                     <div class="circle" data-dots="80" data-percent="70"></div>
@@ -416,7 +416,7 @@
                                     </div>
                                 </div>
 
-                              
+
 
                                 <div class="box">
                                     <div class="circle" data-dots="80" data-percent="85"></div>
@@ -459,8 +459,8 @@
                                         <p>DSS: this website help us to be aware about digital frauds
                                             and give us quick polic access.</p>
 
-                                        <a href="https://shivuu2005.github.io/shivam-malviya-sites-updated-version/" target="_blank"><i
-                                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                        <a href="https://shivuu2005.github.io/shivam-malviya-sites-updated-version/"
+                                            target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -519,56 +519,15 @@
                         <a href="https://www.facebook.com/shi.vam.96155669" target="_blank"><i
                                 class="fa-brands fa-facebook"></i></a>
 
-            
+
 
                         <a href="https://www.hackerrank.com/profile/malviyashivam238" target="_blank"><i
                                 class="fa-brands fa-hackerrank"></i></a>
                     </div>
 
                     <!-- Contact Form -->
-                    <div class="row">
-                        <form name="submit-to-google-sheet">
-                            <div class="contact-form padd-15">
-                                <div class="row">
-                                    <div class="form-item col-6 padd-15">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="Name" placeholder="Name"
-                                                required>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-item col-6 padd-15">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" name="Email" placeholder="Email"
-                                                required>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="form-item col-12 padd-15">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="Subject"
-                                                placeholder="Subject (Optional)">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-item col-12 padd-15">
-                                        <div class="form-group">
-                                            <textarea name="Message" class="form-control" id="" placeholder="Message"
-                                                required></textarea>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-item col-12 padd-15">
-                                        <div class="form-group">
-                                            <button type="submit" class="btn">Send Message</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-
+                    <div class="rownew">
+                        <script src="https://sheetdb.io/s/f/dn0x4vzdkh20f.js"></script>
                         <span id="msg"></span>
                     </div>
                 </div>
@@ -605,27 +564,7 @@
     <script src="js/script.js"></script>
     <script src="js/style-switcher.js"></script>
 
-    <!-- Script for Contact Form -->
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzpVKbovEbPtrK1_z2UKyXxs8Vl8Hxf1Xl5tnscLc1EW_XBnA1znQUUM8YGsGg1DtUI/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
 
-
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-                    msg.innerHTML = "Message sent successfully!"
-                    setTimeout(function () {
-                        msg.innerHTML = ""
-                    }, 3000)
-
-                    form.reset()
-                })
-                .catch(error => console.error('Error!', error.message))
-        })
-    </script>
 </body>
 
 </html>
