@@ -9,7 +9,6 @@
 
 - 💬 Ask me about **web development and deployment**
 
-- 📫 How to reach me **malviyashivam238@gmail.com**
 
 - 📄 Know about my experiences [https://shivuu2005.github.io/my-portfolio/](https://shivuu2005.github.io/my-portfolio/)
 
